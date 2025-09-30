@@ -7,7 +7,14 @@ jobs:
 
         steps:
         - name: Hola Mundo
-          run: echo "Hola Mundo Prueba"
+          run: echo "Hola Mundo Prueba"        
+        - name: Crear archivo
+          run: touch hola.txt        
+        - name: Setear Texto
+          run: echo "Hola Mundo" >> hola.txt
+        - name: Muestre el texto
+          run: cat hola.txt
+         
     
     other:
         runs-on: ubuntu-latest
